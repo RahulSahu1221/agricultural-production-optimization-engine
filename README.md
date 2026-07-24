@@ -6,6 +6,8 @@ OptiCrop is a precise, Machine Learning-based crop recommendation system designe
 
 Built with a focus on reliability and meticulous code structure, the system seamlessly integrates a robust Python/Scikit-Learn backend with a modern, responsive frontend.
 
+https://agricultural-production-optimization.onrender.com
+
 ---
 
 ## Key Features
