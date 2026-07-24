@@ -93,6 +93,33 @@ OptiCrop/
 
 ```
 
+---
+
+## Setup & Run Instructions
+
+**Create and activate a virtual environment (recommended)**
+   ```bash
+   1. python -m venv venv
+   venv\Scripts\activate
+
+   2. Install dependencies
+   pip install -r requirements.txt
+   
+   3. Build the extended dataset
+   python expand_dataset.py
+   
+   4. Train the ML model (generates the model/model.pkl file)
+   python train_model.py
+
+   5. Run the application smoke tests
+   python test.py
+
+   6. Start the Flask server
+   python app.py
+
+```
+---
+
 ## Dashboard Images
 <img width="2880" height="1710" alt="OptiCorp_Dashboard_Home_Page" src="https://github.com/user-attachments/assets/342bd34a-20e5-4499-ae37-bc8e9ad70f43" />
 <img width="2880" height="1788" alt="OptiCrop_About_Page" src="https://github.com/user-attachments/assets/89ac4d84-93c0-40a6-9ee3-ef8958913b36" />
