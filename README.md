@@ -1,4 +1,4 @@
-# 🌱 OptiCrop
+# OptiCrop
 
 ## Smart Agricultural Production Optimization Engine
 
@@ -8,7 +8,7 @@ Built with a focus on reliability and meticulous code structure, the system seam
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 *   **Robust Machine Learning Pipeline:** Automatically preprocesses data (handling missing values, scaling features, and encoding labels) and evaluates multiple algorithms to select the most accurate model.
 *   **Expanded Agronomic Dataset:** Features a dynamic data injection script (`expand_dataset.py`) that expands the training data to cover **64 distinct global crops** across 6,400 statistically balanced samples.
@@ -17,7 +17,7 @@ Built with a focus on reliability and meticulous code structure, the system seam
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Backend & Machine Learning
 *   **Python:** Core programming language.
@@ -32,7 +32,7 @@ Built with a focus on reliability and meticulous code structure, the system seam
 
 ---
 
-## 🧪 Environmental Parameters Evaluated
+## Environmental Parameters Evaluated
 
 The model requires the following 7 inputs to generate a prediction:
 
@@ -46,7 +46,7 @@ The model requires the following 7 inputs to generate a prediction:
 
 ---
 
-## 🧠 Machine Learning Architecture
+## Machine Learning Architecture
 
 1.  **Data Preprocessing (`preprocess.py`):** Loads the dataset, drops null values, separates features from labels, and applies a `StandardScaler` to normalize numerical ranges.
 2.  **Model Training (`train_model.py`):** The engine trains multiple candidate algorithms (Logistic Regression, KNN, Decision Tree, Random Forest) for performance comparison.
@@ -54,7 +54,7 @@ The model requires the following 7 inputs to generate a prediction:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 OptiCrop/
