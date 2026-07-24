@@ -1,0 +1,182 @@
+/* static/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Light Theme Variables */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --brand-primary: #16a34a; 
+    --brand-primary-hover: #15803d;
+    --brand-accent: #dcfce7;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+/* Syncing with Bootstrap 5 native dark mode */
+[data-bs-theme="dark"] {
+    /* Dark Theme Variables */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --brand-primary: #22c55e;
+    --brand-primary-hover: #16a34a;
+    --brand-accent: #064e3b;
+    --glass-bg: rgba(30, 41, 59, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* Subtle Animated Background Mesh */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background: radial-gradient(circle at 15% 50%, var(--brand-accent), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(34, 197, 94, 0.05), transparent 25%);
+    animation: ambientDrift 20s ease-in-out infinite alternate;
+}
+
+@keyframes ambientDrift {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+/* Premium Glassmorphism Navbar */
+.navbar-glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--brand-primary) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-secondary) !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-primary) !important;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    color: var(--brand-primary);
+    transform: rotate(15deg);
+}
+
+/* Buttons */
+.btn-brand {
+    background-color: var(--brand-primary);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(22, 163, 74, 0.3);
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-primary-hover);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px -3px rgba(22, 163, 74, 0.4);
+}
+
+/* Cards */
+.glass-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--brand-primary);
+    margin-bottom: 1rem;
+}
+
+/* Scroll Animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- NEW: Form Inputs and Tables Integration Fix --- */
+.form-control, .input-group-text {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--glass-border) !important;
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+.form-control:focus {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--brand-primary) !important;
+    box-shadow: 0 0 0 0.25rem rgba(22, 163, 74, 0.25) !important;
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary) !important;
+    opacity: 0.6;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--text-primary);
+    color: var(--text-primary);
+    transition: color 0.4s ease;
+}
+
+.table td, .table th {
+    border-color: var(--glass-border);
+}
