@@ -82,6 +82,11 @@ OptiCrop/
 │   ├── about.html          # Architecture overview
 │   └── findyourcrop.html   # Main prediction dashboard
 │
-└── static/
-    ├── css/style.css       # Custom styling and theme variables
-    └── js/script.js        # Theme toggling and frontend logic
+├── static/
+|   ├── css/style.css       # Custom styling and theme variables
+|    └── js/script.js        # Theme toggling and frontend logic
+|
+├── OptiCorp_Dashboard/
+    ├── OptiCrop_About_Page.png
+    ├── OptiCrop_Dashboard_Home_Page.png
+    └── OptiCrop_Find_Your_Crop_Page.png
