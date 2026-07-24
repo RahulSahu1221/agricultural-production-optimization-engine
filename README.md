@@ -86,7 +86,16 @@ OptiCrop/
 |   ├── css/style.css       # Custom styling and theme variables
 |    └── js/script.js        # Theme toggling and frontend logic
 |
-├── OptiCorp_Dashboard/
+└── OptiCorp_Dashboard/
     ├── OptiCrop_About_Page.png
     ├── OptiCrop_Dashboard_Home_Page.png
     └── OptiCrop_Find_Your_Crop_Page.png
+
+```
+
+## Dashboard Images
+<img width="2880" height="1710" alt="OptiCorp_Dashboard_Home_Page" src="https://github.com/user-attachments/assets/342bd34a-20e5-4499-ae37-bc8e9ad70f43" />
+<img width="2880" height="1788" alt="OptiCrop_About_Page" src="https://github.com/user-attachments/assets/89ac4d84-93c0-40a6-9ee3-ef8958913b36" />
+<img width="2880" height="1800" alt="OptiCrop_Find_Your_Crop_Page" src="https://github.com/user-attachments/assets/168ad138-21cd-4289-9174-6eb6829222e8" />
+
+
